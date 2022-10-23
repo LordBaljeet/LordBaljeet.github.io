@@ -1,0 +1,101 @@
+:root{
+    --nav-height: 103px;
+}
+
+body {
+    background-color: #2b2b2b;
+    margin: 0;
+    color: white;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+#Title{
+    text-decoration: underline;
+    margin-left: 50px;
+}
+
+@supports (scrollbar-color: red black) {
+    * {
+        scrollbar-color: rgb(255, 0, 212) #414141;
+    }
+}
+
+/* -------------------------------------- navBar --------------------------------------*/
+
+nav {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    border-bottom: 3px solid white;
+    padding-bottom: 30px;
+}
+
+
+.nav_icon {
+    border-radius: 12px;
+    width: 8vw;
+    height: 40px;
+    min-width: 40px;
+    max-width: 150px;
+    background-color: white;
+    padding: 5px;
+    position: relative;
+    color: rgb(0, 89, 255);
+}
+
+.nav_icon i{
+    font-size: 35px;
+    margin-left: 10%;
+}
+
+.home{
+    color: red;
+}
+
+.nav_icon p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 68%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+.nav_icon img {
+    height: 40px;
+}
+
+.nav_icon:hover {
+    box-shadow: 1px 1px 5px 1px rgb(255, 166, 0);
+    transform: translateY(-5px);
+}
+
+@media (width < 1220px) {
+    .nav_icon p {
+        visibility: hidden;
+    }
+
+    .nav_icon img, .nav_icon i {
+        margin-left: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}

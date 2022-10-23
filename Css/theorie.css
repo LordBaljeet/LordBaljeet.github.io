@@ -1,0 +1,131 @@
+.notes_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.editormd {
+    height: 70vh !important;
+    width: 70vw !important;
+}
+
+.CodeMirror,
+.editormd-preview {
+    width: max-content;
+    position: absolute;
+}
+
+.editormd-fullscreen {
+    height: 90% !important;
+    width: 100% !important;
+    top: var(--nav-height) !important;
+}
+
+.editormd-preview-close-btn::before {
+    content: "✎" !important;
+}
+
+.editormd-preview-close-btn {
+    transform: scaleX(-1) !important;
+    border-radius: 50% !important;
+    padding-top: 6px !important;
+    height: 30px;
+}
+
+.textEditor {
+    height: 70vh;
+    width: 40vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0;
+    min-width: 500px;
+    display: none;
+}
+
+.notes {
+    height: 70vh;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+#Title {
+    color: rgb(103, 234, 169);
+    font-weight: 400;
+    font-size: 2em;
+    font-family: 'open sans';
+    position: absolute;
+    left: 33%;
+}
+
+.util {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    height: 100px;
+    width: 40vw;
+    margin: auto;
+}
+
+.editormd-preview {
+    background: #2C2827 !important;
+}
+
+#theme-switcher {
+    position: absolute;
+    left: 0;
+}
+
+#saveToGit {
+    cursor: pointer;
+    color: rgb(255, 153, 0);
+    border-radius: 15%;
+    box-shadow: 0px 0px 5px 2px gold;
+    margin-left: 10px;
+    background-color: rgb(103, 234, 169, 0);
+}
+
+.modalContent {
+    background-color: #fefefee8;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    gap: 13%;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.closeModal {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    width: fit-content;
+  }
+  
+  .closeModal:hover,
+  .closeModal:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }

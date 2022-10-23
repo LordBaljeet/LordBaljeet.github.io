@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Notes</title>
+    <link rel="stylesheet" href="../Css/main.css">
+    <link rel="stylesheet" href="../Css/mainStyle.css">
+    <script src="../JavaScript/jquery.js"></script>
+    <script type="module" src="../JavaScript/main.js"></script>
+    <script src="https://kit.fontawesome.com/de279a9e0e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav>
+        <a href="./main.html" target="_blank">
+            <div class="nav_icon home" title="home">
+                <i class="fa-solid fa-house"></i>
+                <p>Home</p>
+            </div>
+        </a>
+        <a href="https://poesi.esi-bru.be/my/" target="_blank">
+            <div class="nav_icon" title="Poesi">
+                <i class="fa-brands fa-firefox"></i>
+                <p>Poesi</p>
+            </div>
+        </a>
+        <a href="https://git.esi-bru.be/" target="_blank">
+            <div class="nav_icon" title="Git">
+                <i class="fa-brands fa-git"></i>
+                <p>GitLab</p>
+            </div>
+        </a>
+        <a href="https://horaires.esi-bru.be/?type=groupes&ressource=C111" target="_blank">
+            <div class="nav_icon" title="Calendar">
+                <i class="fa-solid fa-calendar"></i>
+                <p>Calendar</p>
+            </div>
+        </a>
+        <a href="https://mail.google.com/mail/u/2/#inbox" target="_blank">
+            <div class="nav_icon" title="Email">
+                <i class="fa-solid fa-envelope"></i>
+                <p>Gmail</p>
+            </div>
+        </a>
+    </nav>
+
+    <div class="bg-image"></div>
+    <button class="addLesson" title="Add Lesson">
+        <i class="fa-solid fa-plus"></i>
+    </button>
+
+    <div class="modal">
+        <form action="#" class="modalContent">
+            <span class="closeModal">&times;</span>
+            <p>⚠You cannot edit this lesson afterwards. Complete carefully</p>
+            <input type="text" name="name" id="lessonName" placeholder="Name" required>
+            <input type="text" name="repoName" id="repoName" placeholder="Repo Name" required>
+            <div class="checkBoxes">
+                <label for="theo_check">Theorie
+                    <input type="checkbox" name="theo_Check" id="theo_check">
+                </label>
+                <label for="pra_check">Pratique
+                    <input type="checkbox" name="pra_Check" id="pra_check">
+                </label>
+            </div>
+            <input type="button" value="Create" id="create">
+        </form>
+    </div>
+
+    <div class="container">
+
+        <div class="lesson class">
+            <div class="classTitle">Dev</div>
+            <div class="classImage"></div>
+            <div class="subLinks">
+                <a href="#" class="sublink theorie Dev3">theorie</a>
+                <a href="#" class="sublink pratique Dev3">pratique</a>
+            </div>
+        </div>
+        <div class="lesson class">
+            <div class="classTitle">Don</div>
+            <div class="classImage"></div>
+            <div class="subLinks">
+                <a href="#" class="sublink theorie Don3">theorie</a>
+                <a href="#" class="sublink pratique Don3">pratique</a>
+            </div>
+        </div>
+        <div class="lesson class">
+            <div class="classTitle">Ana</div>
+            <div class="classImage"></div>
+            <div class="subLinks">
+                <a href="#" class="sublink theorie Ana3">theorie</a>
+                <a href="#" class="sublink pratique Ana3">pratique</a>
+            </div>
+        </div>
+        <div class="lesson class">
+            <div class="classTitle">Atlg</div>
+            <div class="classImage"></div>
+            <div class="subLinks">
+                <a href="#" class="sublink theorie Atlg3">theorie</a>
+            </div>
+        </div>
+        <div class="lesson class">
+            <div class="classTitle">Algo</div>
+            <div class="classImage"></div>
+            <div class="subLinks">
+                <a href="#" class="sublink theorie Atlg3">theorie</a>
+            </div>
+        </div>
+        <div class="lesson class">
+            <div class="classTitle">Drtg</div>
+            <div class="classImage"></div>
+            <div class="subLinks">
+                <a href="#" class="sublink theorie Drtg3">theorie</a>
+            </div>
+        </div>
+        <div class="lesson class">
+            <div class="classTitle">Cai</div>
+            <div class="classImage"></div>
+            <div class="subLinks">
+                <a href="#" class="sublink theorie Cai3">theorie</a>
+            </div>
+        </div>
+        <a href="#" class="class">
+            <div class="classTitle">Projects</div>
+            <div class="projects classImage"></div>
+        </a>
+        <a href="#" class="class">
+            <div class="classTitle">Links</div>
+            <div class="links classImage"></div>
+        </a>
+    </div>
+
+    <pre id="notes"></pre>
+
+    <footer><em>This website was made for fun By LordBaljeet 💀.</em></footer>
+
+</body>
+
+</html>

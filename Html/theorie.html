@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theorie</title>
+    <link rel="stylesheet" href="../Css/mainStyle.css">
+    <link rel="stylesheet" href="../Css/theorie.css">
+    <link rel="stylesheet" href="../node_modules/editor.md/css/editormd.css" />
+    <script src="../JavaScript/jquery.js"></script>
+</head>
+
+<body>
+
+    <nav>
+        <a href="./main.html" target="_blank">
+            <div class="nav_icon"><img src="../Ressources/homeIcon.png" alt="homeIcon">
+                <p>Home</p>
+            </div>
+        </a>
+        <a href="https://poesi.esi-bru.be/my/" target="_blank">
+            <div class="nav_icon"><img src="../Ressources/poesi.png" alt="poesiIcon">
+                <p>Poesi</p>
+            </div>
+        </a>
+        <a href="https://git.esi-bru.be/" target="_blank">
+            <div class="nav_icon"><img src="../Ressources/git.png" alt="gitIcon">
+                <p>GitLab</p>
+            </div>
+        </a>
+        <a href="https://horaires.esi-bru.be/?type=groupes&ressource=C111" target="_blank">
+            <div class="nav_icon"><img src="../Ressources/calendar.png" alt="calendarIcon">
+                <p>Calendar</p>
+            </div>
+        </a>
+        <a href="https://mail.google.com/mail/u/2/#inbox" target="_blank">
+            <div class="nav_icon"><img src="../Ressources/email.png" alt="poesiIcon">
+                <p>Gmail</p>
+            </div>
+        </a>
+    </nav>
+
+    <li id="saveLi">
+        <button id="saveToGit" title="Upload To Git" type="button">
+            <i class="fa fa-paper-plane"></i>
+        </button>
+    </li>
+
+    <div id="gitModal" class="modal">
+        <form action="#" class="modalContent">
+            <span class="closeModal">&times;</span>
+            <input type="text" name="commit" id="commitMsg" placeholder="Commit Message" required>
+            <input type="submit" value="Upload" id="upload">
+        </form>
+    </div>
+
+    <div id="editor">
+        <textarea id="editor-txtArea" style="display: none;"></textarea>
+    </div>
+
+    <script src="../node_modules/editor.md/editormd.js"></script>
+    <script src="../node_modules/editor.md/languages/en.js"></script>
+    <script type="module" src="../JavaScript/theorie.js"></script>
+
+</body>
+
+</html>
