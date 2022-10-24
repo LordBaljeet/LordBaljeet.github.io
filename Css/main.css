@@ -37,8 +37,8 @@
 
 .subLinks{
     position: absolute;
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     backdrop-filter: blur(3px);
     display: flex;
     flex-direction: column;
@@ -47,6 +47,7 @@
     align-items: center;
     visibility: hidden;
     z-index: 4;
+    border-radius: 6px;
 }
 
 .sublink{
@@ -106,9 +107,6 @@
     opacity: .3;
     z-index: 1;
 }
-.projects{
-    border: 3px solid greenyellow;
-}
 
 div:nth-child(2n) .classImage, a:nth-child(2n) .classImage{
     transform: rotateX(180deg) rotateY(180deg)
@@ -118,7 +116,7 @@ div:nth-child(2n) .classImage, a:nth-child(2n) .classImage{
     top: 0;
     right: 0;
     z-index: 5;
-    margin: 5px;
+    margin: 15px;
     font-size: 24px;
     color: red;
     background-color: transparent;
