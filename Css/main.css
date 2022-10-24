@@ -2,15 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap');
 
-/* -------------------------------------- General Styling --------------------------------------*/
-
-.bg-image{
-    background-image: url(../Ressources/undraw_reading_time_re_phf7.svg);
-    width: 100%;
-    height: 100%;
-    z-index: 5;
-}
-
 /* -------------------------------------- Classes Panels --------------------------------------*/
 
 .container{
