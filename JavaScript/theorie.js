@@ -4,7 +4,7 @@ var cma = "hello";
 
 async function getFile(lesson) {
 
-    const Token = "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";
+    const Token = process.env.TOKEN;
     const octokit = new Octokit({
         auth: Token
     });
