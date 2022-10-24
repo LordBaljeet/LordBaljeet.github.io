@@ -1,5 +1,23 @@
 {
   "dependencies": {
     "editor.md": "^1.5.0"
-  }
+  },
+  "name": "noteswebsite",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LordBaljeet/NotesWebsite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LordBaljeet/NotesWebsite/issues"
+  },
+  "homepage": "https://github.com/LordBaljeet/NotesWebsite#readme",
+  "description": ""
 }

@@ -3,7 +3,7 @@ async function theoriePage() {
     var links = $('.theorie');
     for (const link of links) {
         $(link).on('click', () => {
-            var opened = window.open("../docs/theorie.html");
+            var opened = window.open("../theorie.html");
             var lesson = link.classList[2];
             console.log(link.classList[2]);
             opened.sessionStorage.setItem('name', lesson);
