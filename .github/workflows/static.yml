@@ -41,5 +41,7 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v1
       - name: Test
+        run: |
+          echo 'test complete'
         env:
           TOKEN: ${{secrets.TOKEN}}
