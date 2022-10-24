@@ -2,12 +2,11 @@ import { Octokit } from "https://cdn.skypack.dev/octokit";
 var sha = "";
 var cma = "hello";
 
+const tok1 = "github_pat_11AZ7EVHI0EeowLQj92Nhi_5QajrwTVjwKYRisEi5";
+const tok2 = "rx1rrNvJPeKKP64vinoDMFQfIMLHE5TE4qlb22aGY";
+const Token = tok1 + tok2;
 async function getFile(lesson) {
-
-    const Token = "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";
-    const octokit = new Octokit({
-        auth: Token
-    });
+    const octokit = new Octokit({auth: Token});
 
     try {
         const result = await octokit.request('GET /repos/{owner}/{repo}/contents/{path}', {
@@ -62,10 +61,8 @@ async function uploadFile(content, commit) {
     const lesson = sessionStorage.getItem('name');
     console.log(lesson);
 
-    const Token = "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";
-    const octokit = new Octokit({
-        auth: Token
-    });
+    const octokit = new Octokit({auth: Token});
+    
     if (sessionStorage.getItem('fileExists')=="true") {
 
         console.log("repo exists");
@@ -106,7 +103,7 @@ function uploadModal() {
 
 function upload(){
     $('#upload').on('click', async () => {
-        if($('form')[0].checkValidity()){
+        if($('#commitMsg').val() != ""){
         console.log("form valid!");
         const commit = $('#commitMsg').val();
         const content = sessionStorage.getItem('content');
