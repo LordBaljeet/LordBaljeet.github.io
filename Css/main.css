@@ -32,6 +32,7 @@
     justify-content: center;
     position: relative;
     min-height: 250px;
+    border-color:white;
 }
 
 .subLinks{
@@ -151,7 +152,7 @@ div:nth-child(2n) .classImage, a:nth-child(2n) .classImage{
     width: 40%;
     display: flex;
     flex-direction: column;
-    height: 27vh;
+    height: auto;
     gap: 23px;
     color: purple;
     max-width: 400px;
